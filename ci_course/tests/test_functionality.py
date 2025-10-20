@@ -17,5 +17,6 @@ def test_minimum():
     assert ci_course.minimum(1.2, 2.3) == 1.2
     assert ci_course.minimum(-1.2, -3) == -3
 
+
 def test_extra():
     assert ci_course.minimum("sa", "ah") is None
