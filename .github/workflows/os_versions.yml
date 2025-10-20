@@ -31,7 +31,8 @@ jobs:
           python -m pip install .[dev]
     - name: Lint with flake8
       run: |
-        flake 8
+        # stop the build if there are Python syntax errors or undefined names
+        flake8 . 
     - name: Test with pytest
       run: |
         pytest
